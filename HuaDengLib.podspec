@@ -25,12 +25,13 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xuedanwu' => '15618025967@163.com' }
-  s.source           = { :git => 'https://github.com/xuedanwu/HuaDengLib.git', :tag => s.version.to_s }
+#  s.source           = { :git => 'https://github.com/xuedanwu/HuaDengLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xuedanwu/Code.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-#  s.source_files = 'HuaDengLib/Classes/**/*'
+  s.source_files = 'HuaDengLib/Classes/**/*'
   
   s.default_subspec = 'Base'
   s.static_framework = true
@@ -47,12 +48,14 @@ TODO: Add long description of the pod here.
   end
 #
   s.subspec 'Base' do |ss|
+    ss.source_files = 'HuaDengLib/Classes/**/*'
     ss.frameworks = 'UIKit', 'Foundation', 'Security', 'CoreGraphics', 'CoreTelephony', 'SystemConfiguration', 'VideoToolbox', 'GLKit'
     ss.libraries = 'icucore', 'c++', 'sqlite3', 'z', 'iconv'
     
-    ss.vendored_libraries = [
-      'SLVenderModule/lib/XGPush/libXG-SDK.a'
-    ]
+    
+#    ss.vendored_libraries = [
+#      'SLVenderModule/lib/XGPush/libXG-SDK.a'
+#    ]
 
   end
   
