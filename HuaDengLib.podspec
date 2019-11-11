@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HuaDengLib'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HuaDengLib.'
+  s.version          = '1.0.1'
+  s.summary          = '花灯第三方依赖'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,9 +28,28 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/xuedanwu/HuaDengLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'HuaDengLib/Classes/**/*'
+  
+#  s.default_subspec = 'Core'
+#  s.static_framework = true
+  
+#  s.subspec 'AppStore' do |ss|
+##    ss.dependency 'HuaDengLib/Core'
+#    
+#  end
+#  
+#  s.subspec 'Enterprise' do |ss|
+##    ss.dependency 'HuaDengLib/Core'
+#    ss.resources = ['HuaDengLib/Resource/Enterprise/Pay/*.{png}']
+#    
+#  end
+#  
+#  s.subspec 'Core' do |ss|
+#    ss.frameworks = 'UIKit', 'Foundation', 'Security', 'CoreGraphics', 'CoreTelephony', 'SystemConfiguration', 'VideoToolbox', 'GLKit'
+#    ss.libraries = 'icucore', 'c++', 'sqlite3', 'z', 'iconv'
+#  end
   
   # s.resource_bundles = {
   #   'HuaDengLib' => ['HuaDengLib/Assets/*.png']

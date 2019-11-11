@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HuaDengLib (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HuaDengLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HuaDengLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HuaDengLib: e2d3c20de914c4af0cdcfc05e1a5688986ee96f6
+
+PODFILE CHECKSUM: af5c600300b551fd1ddfc64e6b55b6d921c10d62
+
+COCOAPODS: 1.8.4
