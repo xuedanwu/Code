@@ -31,24 +31,26 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HuaDengLib/Classes/**/*'
+#  s.source_files = 'HuaDengLib/Classes/**/*'
   
   s.default_subspec = 'Base'
   s.static_framework = true
   
   s.subspec 'AppStore' do |ss|
+    ss.source_files = 'HuaDengLib/Classes/AppStore/*'
     ss.dependency 'HuaDengLib/Base'
 
   end
 #
   s.subspec 'Enterprise' do |ss|
+    ss.source_files = 'HuaDengLib/Classes/Enterprise/*'
     ss.dependency 'HuaDengLib/Base'
     ss.resources = ['HuaDengLib/Resource/Enterprise/Pay/*.{png}']
 
   end
 #
   s.subspec 'Base' do |ss|
-    ss.source_files = 'HuaDengLib/Classes/**/*'
+#    ss.source_files = 'HuaDengLib/Classes/**/*'
     ss.frameworks = 'UIKit', 'Foundation', 'Security', 'CoreGraphics', 'CoreTelephony', 'SystemConfiguration', 'VideoToolbox', 'GLKit'
     ss.libraries = 'icucore', 'c++', 'sqlite3', 'z', 'iconv'
     
